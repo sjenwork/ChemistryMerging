@@ -966,22 +966,8 @@ if __name__ == '__main__':
     '''
     說明：先跑一次test_run=False，將原始的指引表整理之後輸出，之後才能跑測試run
     '''
-    #basePath = '/data5/jsrdoz/ChemCloud/A03_Merge/'
     basePath = os.path.dirname(os.getcwd())
     srcFile = 'data/全部_0528.xlsx'
-    #srcFile = 'data/test.xlsx'
-    #srcFile = 'data/全部_0528_test.xlsx'
-    #srcFile = 'data/data_to_0521/subdata_2020-05_0.xls'
-    #srcFile = 'data/data_to_0521/已整併+未整併_0521-2_all.xlsx'
-    #srcFile = 'data/data_to_0521/test.xls'
-    #srcFile = 'data/202001-03已整併.xls'
 
-
-
-    #a = preProcessor(srcFile)#, removeKeyWord=)
     r = referenceTable(basePath=basePath, test_run = False)    # test_run = integer or False
     m = mergeChem(basePath=basePath, inpFile=srcFile)
-    #p = postProcessor(inpFile=srcFile)
-
-    
-    #r = referenceTable(test_run = 1)    # test_run = integer or False
